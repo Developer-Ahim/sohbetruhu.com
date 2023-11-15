@@ -1,0 +1,199 @@
+
+        /* Styling the border and box
+        effect of the progress bar*/
+        .progress-bar {
+    width: 132px;
+    height: 12px;
+    margin-top: 0px;
+    border: 1px solid #565656;
+    border-radius: 5px;
+    box-shadow: 0 0 4px rgb(3 173 216);
+    display: -webkit-inline-box;
+        }
+ 
+        /* Stylingthe background color of each
+        animation and border radius */
+        .percentage {
+    display: block;
+    height: 100%;
+    background-color: #03add8;
+    border-radius: 10px;
+    animation: progress 1500ms ease-in 1;
+        }
+ 
+        /* Server status*/
+        .c {
+            width: 35%;
+			--space: 10;
+        }
+ 
+        /* Animating the progress bar by
+        initially starting from 0*/
+        @keyframes progress {
+            from {
+                width: 0;
+            }
+        }
+
+
+/* kodumdan sonrası */
+
+.esunusburda {
+    width: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-size: 9px;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Lato:100,400);
+
+body{
+  margin: 0;
+  padding: 0;
+  background: #eee;
+}
+
+.box{
+  width: 250px;
+  height: 200px;
+  position: absolute;
+  left: calc(50% - 125px);
+  top: calc(50% - 100px);
+  left: -webkit-calc(50% - 125px);
+  top: -webkit-calc(50% - 100px);
+}
+
+.box span{
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  position: absolute;
+}
+
+.box span:nth-child(2){
+  top: 2px;
+  left: 125px;
+}
+
+.box span:nth-child(7){
+  top: 85px;
+  left: 125px;
+}
+
+.box span:nth-child(12){
+  top: 165px;
+  left: 125px;
+}
+
+.server{
+  width: 110px;
+  height: 7px;
+  
+  border-radius: 1px;
+}
+
+
+
+.server:first-child ul li{
+  width: 6px;
+  height: 6px;
+  float: left;
+  margin-left: 10px;
+  margin-top: 12px;
+  background: rgba(149,244,118,0.6);
+}
+
+.server ul li:first-child{
+  -webkit-animation: pattern1 0.14s linear infinite;
+}
+
+.server ul li:nth-child(2){
+  -webkit-animation: pattern1 0.14s 0.02s linear infinite;
+}
+
+.server ul li:last-child{
+  -webkit-animation: pattern1 0.14s 0.05s linear infinite;
+}
+
+@-webkit-keyframes pattern1{
+  0%{
+    background: rgba(149,244,118,0.6);
+  }
+  100%{
+    background: rgba(149,244,118,1);
+  }
+}
+
+.warning ul li{
+  width: 6px;
+  height: 6px;
+  float: left;
+  margin-left: 10px;
+  margin-top: 12px;
+  background: rgba(245,190,0,0.6);
+}
+
+.warning ul li:first-child{
+  -webkit-animation: pattern2 0.14s linear infinite;
+}
+
+.warning ul li:nth-child(2){
+  -webkit-animation: pattern2 0.14s 0.02s linear infinite;
+}
+
+.warning ul li:last-child{
+  -webkit-animation: pattern2 0.14s 0.05s linear infinite;
+}
+
+@-webkit-keyframes pattern2{
+  0%{
+    background: rgba(245,190,0,0.6);
+  }
+  100%{
+    background: rgba(245,190,0,1);
+  }
+}
+
+.error ul li{
+    width: 11px;
+    height: 12px;
+    float: left;
+    margin-left: 0px;
+    margin-top: 8px;
+    background: #00ccff;
+    border-radius: 16px;
+    box-shadow: 0 0 4px rgb(32 119 209);
+}
+
+
+.error ul li:first-child{
+  -webkit-animation: pattern3 0.9s linear infinite;
+}
+
+.error ul li:nth-child(2){
+  -webkit-animation: pattern3 0.9s linear infinite;
+}
+
+.error ul li:last-child{
+  -webkit-animation: pattern3 0.9s linear infinite;
+}
+
+@-webkit-keyframes pattern3{
+  0%{
+    background: rgba(236,69,62,0.6);
+  }
+  80%{
+    background: #0aff22;
+  }
+  100%{
+    background: rgba(236,69,62,1);
+  }
+}
+
+
+
